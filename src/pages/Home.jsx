@@ -27,7 +27,7 @@ const Home = () => {
 
   const fetchAllSongs = async () => {
     try {
-      const res = await axios.get("music-backend-weld.vercel.app/api/song");
+      const res = await axios.get("https://music-backend-weld.vercel.app/api/song");
       if (res && res.data && res.data.song) {
         setsongs(res.data.song);
         // console.log();

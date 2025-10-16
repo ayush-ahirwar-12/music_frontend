@@ -42,8 +42,8 @@ const Upload = () => {
 
       // choose API endpoint depending on user presence
       const url = user
-        ? "music-backend-weld.vercel.app/api/userSong" //if user exists
-        : "music-backend-weld.vercel.app/api/Allsong"; // if no user
+        ? "https://music-backend-weld.vercel.app/api/userSong" //if user exists
+        : "https://music-backend-weld.vercel.app/api/Allsong"; // if no user
 
       const headers = user?.token
         ? { Authorization: `Bearer ${user.token}` }
